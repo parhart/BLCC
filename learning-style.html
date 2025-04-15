@@ -32,24 +32,53 @@
     </div>
   </nav>
 
-  <!-- Content -->
-  <section class="max-w-4xl mx-auto px-6 py-16">
-    <h1 class="text-3xl font-bold text-uniBlue mb-4">Learning Style Sync</h1>
-    <p class="mb-6">Choose how you learn best and we’ll match you with others who study like you.</p>
+  <!-- Main Section -->
+  <section class="max-w-5xl mx-auto px-6 py-10">
+    <h1 class="text-4xl font-bold text-uniBlue text-center mb-2">Learning Style Sync</h1>
+    <p class="text-lg text-gray-700 mb-10 text-center">Choose how you learn best and we’ll match you with others who study like you.</p>
 
-    <form class="bg-white shadow-md rounded p-6 space-y-4">
-      <label class="block">
-        <span class="text-gray-700">How do you prefer to learn?</span>
-        <select class="mt-2 block w-full border rounded px-3 py-2">
-          <option>Visual (diagrams, charts)</option>
-          <option>Auditory (discussions, lectures)</option>
-          <option>Kinesthetic (hands-on practice)</option>
-          <option>Reading/Writing</option>
-        </select>
-      </label>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      
+      <!-- Learning Style Form -->
+      <form class="bg-white shadow-md rounded p-6 space-y-6">
+        <div>
+          <label class="block font-medium text-gray-700 mb-2">How do you prefer to learn?</label>
+          <select class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-uniBlue focus:border-uniBlue">
+            <option>Visual (diagrams, charts)</option>
+            <option>Auditory (lectures, discussions)</option>
+            <option>Reading/Writing (textbooks, notes)</option>
+            <option>Kinesthetic (hands-on, practice-based)</option>
+            <option>Collaborative (group study, dialogue)</option>
+            <option>Independent (solo review, journaling)</option>
+            <option>Conceptual (big-picture connections)</option>
+            <option>Detail-Oriented (facts, lists, steps)</option>
+          </select>
+        </div>
 
-      <button type="submit" class="bg-uniBlue text-white px-4 py-2 rounded hover:bg-blue-800">Match Me</button>
-    </form>
+        <button type="submit" class="w-full bg-uniBlue text-white px-4 py-2 rounded hover:bg-blue-800 transition">Match Me</button>
+      </form>
+
+      <!-- Tips / Info Panel -->
+      <div class="bg-yellow-50 border border-uniGold rounded p-6 text-uniBlue space-y-4 shadow">
+        <h2 class="text-2xl font-semibold mb-2 flex items-center gap-2">
+          <span>🧠</span> Learning Tips
+        </h2>
+        <ul class="list-disc pl-5 space-y-2 text-sm">
+          <li>Your learning style helps determine how effectively you absorb information.</li>
+          <li>Choose the style that feels natural, not just familiar — be honest!</li>
+          <li>You can always adjust your style preferences later as you explore.</li>
+        </ul>
+
+        <div class="mt-6 text-sm text-gray-600">
+          💡 <strong>Did You Know?</strong> Groups with mixed learning styles tend to be more dynamic and adaptive.
+        </div>
+        <div class="mt-4 text-sm italic text-gray-500">
+          We consider this choice when forming study groups to ensure you sync well with your teammates’ methods.
+        </div>
+      </div>
+
+    </div>
   </section>
+
 </body>
 </html>

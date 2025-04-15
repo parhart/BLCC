@@ -33,21 +33,48 @@
   </nav>
 
   <!-- Main -->
-  <section class="max-w-4xl mx-auto px-6 py-16">
-    <h1 class="text-3xl font-bold text-uniBlue mb-4">Course-Based Matching</h1>
-    <p class="mb-6">Select your enrolled courses and get matched with classmates.</p>
+  <section class="max-w-4xl mx-auto px-6 py-10">
+    <h1 class="text-4xl font-bold text-uniBlue mb-2 text-center">Course-Based Matching</h1>
+    <p class="text-lg text-gray-700 mb-8 text-center">Select your enrolled courses and we’ll connect you with others in the same class.</p>
 
-    <form class="bg-white shadow-md rounded p-6 space-y-4">
-      <label class="block">
-        <span class="text-gray-700">Select Your Class</span>
-        <select class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2">
-          <option>CSCI-A 110 - Introduction to Computing</option>
-          <option>BUS-X 100 - Business Administration</option>
-          <option>MATH-M 119 - Brief Survey of Calculus</option>
-        </select>
-      </label>
-      <button type="submit" class="bg-uniBlue text-white px-4 py-2 rounded hover:bg-blue-800">Match Me</button>
-    </form>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <!-- Matching Form -->
+      <form class="bg-white shadow-lg rounded p-6 space-y-6">
+        <div>
+          <label class="block mb-2 font-medium text-gray-700">Select Your Class</label>
+          <select class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-uniBlue focus:border-uniBlue">
+            <option>CSCI-A 110 - Introduction to Computing</option>
+            <option>INFO-I 101 - Introduction to Informatics</option>
+            <option>BUS-K 201 - The Computer in Business</option>
+            <option>MATH-M 119 - Brief Survey of Calculus</option>
+            <option>ENG-W 131 - English Composition</option>
+            <option>PSY-P 101 - Introductory Psychology</option>
+            <option>POLS-Y 103 - Introduction to American Politics</option>
+            <option>SPAN-S 105 - Elementary Spanish I</option>
+            <option>ECON-E 201 - Introduction to Microeconomics</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full bg-uniBlue text-white px-4 py-2 rounded hover:bg-blue-800 transition">Match Me</button>
+      </form>
+
+      <!-- Tips/Info Panel -->
+      <div class="bg-yellow-50 border border-uniGold rounded p-6 text-uniBlue space-y-4 shadow">
+        <h2 class="text-2xl font-semibold mb-2">💡 Tips for Better Matching</h2>
+        <ul class="list-disc pl-5 space-y-2 text-sm">
+          <li>Make sure your course list is up to date each semester.</li>
+          <li>Choose courses you’re actively looking for help or collaboration in.</li>
+          <li>Use the feedback feature later to improve your group experiences.</li>
+        </ul>
+
+        <div class="mt-6 text-sm text-gray-600">
+          ⏱️ <strong>Pro Tip:</strong> Most study groups match successfully when at least 3 students from the same course sign up.
+        </div>
+        <div class="mt-4 text-sm italic text-gray-500">
+          You’ll get recommendations on who to study with based on your schedule and shared interests in the class.
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>
