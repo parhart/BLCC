@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Match - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uniBlue: '#003865',
+            uniGold: '#FFD200'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-uniBlue shadow mb-6 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">Smart Study Match</div>
+      <div class="space-x-6 text-sm md:text-base">
+        <a href="home.html" class="hover:text-uniGold">Home</a>
+        <a href="product.html" class="hover:text-uniGold">Features</a>
+        <a href="about.html" class="hover:text-uniGold">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-br from-uniBlue to-blue-400 text-white">
+    <h1 class="text-5xl font-bold mb-4">Welcome to Smart Study Match</h1>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">Built for students, by students. Find the perfect group to study with based on your classes, availability, and learning style.</p>
+    <a href="product.html" class="bg-uniGold text-uniBlue hover:bg-yellow-400 px-6 py-3 rounded-md font-semibold">Explore Features</a>
+  </section>
+
+  <!-- Overview -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-uniBlue">What We Offer</h2>
+      <p class="mt-4 text-gray-700">An easier way to form study groups and succeed together.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Course-Based Matching</h3>
+        <p>Connect instantly with students in the same class.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Smart Scheduling</h3>
+        <p>Match with people who share your free time for productive sessions.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Learning Style Sync</h3>
+        <p>Get paired with people who study just like you.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Group Messaging</h3>
+        <p>Stay connected and organized with in-app chats.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Video Chat Ready</h3>
+        <p>Coming soon: built-in video rooms for remote collaboration.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Match Feedback</h3>
+        <p>Improve your group results by rating your sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-uniGold text-uniBlue py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Student Voices</h2>
+      <p class="italic">“Smart Study Match helped me actually enjoy studying. It’s like Tinder for classmates!”</p>
+      <p class="mt-4 font-semibold">— Taylor B., Junior</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-16 bg-uniBlue text-white">
+    <h2 class="text-3xl font-bold mb-4">Ready to boost your study game?</h2>
+    <p class="mb-6">Start matching and studying smarter today.</p>
+    <a href="product.html" class="bg-uniGold text-uniBlue px-6 py-3 rounded-md font-semibold hover:bg-yellow-400">Get Started</a>
+  </section>
+</body>
+</html>

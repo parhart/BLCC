@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Match - About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uniBlue: '#003865',
+            uniGold: '#FFD200'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-uniBlue shadow mb-6 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">Smart Study Match</div>
+      <div class="space-x-6 text-sm md:text-base">
+        <a href="home.html" class="hover:text-uniGold">Home</a>
+        <a href="product.html" class="hover:text-uniGold">Features</a>
+        <a href="about.html" class="hover:text-uniGold">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-6 text-uniBlue text-center">Our Mission</h2>
+    <p class="mb-6 text-lg">We built Smart Study Match to remove the friction from group studying. Our tool empowers students to form meaningful academic connections on day one.</p>
+
+    <h3 class="text-2xl font-semibold mt-10 mb-3 text-uniBlue">Why It Matters</h3>
+    <ul class="list-disc pl-6 space-y-2">
+      <li>Peer learning improves comprehension and retention.</li>
+      <li>Group work builds collaboration skills vital for careers.</li>
+      <li>Matching on learning styles means better results.</li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold mt-10 mb-3 text-uniBlue">Contact Us</h3>
+    <p>Email: <a href="mailto:support@studymatch.app" class="text-blue-600 underline">support@studymatch.app</a></p>
+    <p>Instagram: <a href="#" class="text-blue-600 underline">@smartstudymatch</a></p>
+
+    <h3 class="text-2xl font-semibold mt-10 mb-3 text-uniBlue">FAQ</h3>
+    <div class="space-y-4">
+      <div>
+        <p class="font-medium">Q: Do I need to sign up to use the platform?</p>
+        <p>A: Not for this demo. The full version will include logins and saved preferences.</p>
+      </div>
+      <div>
+        <p class="font-medium">Q: Can I join a real study group now?</p>
+        <p>A: Right now it’s simulated, but live features are on the roadmap.</p>
+      </div>
+      <div>
+        <p class="font-medium">Q: How does it match students?</p>
+        <p>A: Our algorithm analyzes course rosters, available times, and preferred learning styles.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

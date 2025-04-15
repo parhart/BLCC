@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Study Match - Features</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uniBlue: '#003865',
+            uniGold: '#FFD200'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-uniBlue shadow mb-6 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">Smart Study Match</div>
+      <div class="space-x-6 text-sm md:text-base">
+        <a href="home.html" class="hover:text-uniGold">Home</a>
+        <a href="product.html" class="hover:text-uniGold">Features</a>
+        <a href="about.html" class="hover:text-uniGold">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Features -->
+  <section class="container mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center text-uniBlue mb-12">Key Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Class-Based Matching</h3>
+        <p>Find study partners from your actual courses, sorted automatically based on your current semester and schedule.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Availability Sync</h3>
+        <p>No more Doodle polls. Our calendar tool finds common free times for your whole group.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Learning Style Filter</h3>
+        <p>Match with people who prefer diagrams, discussion, or practice problems like you do.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Dynamic Group Creation</h3>
+        <p>Whether you want 1-on-1 sessions or a 4-person group, our matching algorithm balances roles and preferences.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Communication Tools</h3>
+        <p>Use chat, share files, and coordinate meetups all in one space. Video button support coming soon.</p>
+        <button class="mt-3 bg-gray-400 text-white px-4 py-2 rounded-md cursor-not-allowed">Join Video Call (Coming Soon)</button>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow border-t-4 border-uniGold">
+        <h3 class="text-xl font-semibold text-uniBlue mb-2">Progress Feedback</h3>
+        <p>Give feedback after each group session. Your future matches improve every time.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
