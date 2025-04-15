@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Scheduling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uniBlue: '#003865',
+            uniGold: '#FFD200'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-uniBlue shadow text-white mb-6">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">Smart Study Match</div>
+      <div class="space-x-6">
+        <a href="home.html" class="hover:text-uniGold">Home</a>
+        <a href="product.html" class="hover:text-uniGold">Features</a>
+        <a href="about.html" class="hover:text-uniGold">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-3xl font-bold text-uniBlue mb-4">Smart Scheduling</h1>
+    <p class="mb-6">Pick your availability and get grouped with others who match your schedule.</p>
+
+    <form class="bg-white shadow-md rounded p-6 space-y-4">
+      <label class="block">
+        <span class="text-gray-700">Choose Your Available Days</span>
+        <div class="grid grid-cols-3 gap-2 mt-2">
+          <label><input type="checkbox" /> Mon</label>
+          <label><input type="checkbox" /> Tue</label>
+          <label><input type="checkbox" /> Wed</label>
+          <label><input type="checkbox" /> Thu</label>
+          <label><input type="checkbox" /> Fri</label>
+        </div>
+      </label>
+
+      <label class="block">
+        <span class="text-gray-700">Select Time Range</span>
+        <input type="time" class="mt-1 block w-full border px-3 py-2 rounded" />
+      </label>
+
+      <button type="submit" class="bg-uniBlue text-white px-4 py-2 rounded hover:bg-blue-800">Find Sessions</button>
+    </form>
+  </section>
+</body>
+</html>
